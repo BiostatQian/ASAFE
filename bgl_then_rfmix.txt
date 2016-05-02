@@ -64,12 +64,3 @@ cd /usr/local/RFMix-1.5.4/ # change dir to location for RFMIX program
 for chr in `seq 22`; do 
   /usr/local/bin/python2.7 RunRFMix.py PopPhased ${dir}/chr${chr}.alleles ${dir}/myfile.classes ${dir}/chr${chr}.snploc --forward-backward -o ${dir}/chr${chr} --disable-parallel -n 5
 done
-cd $dir
-
-# Convert RFMix output using rephasing.
-# This will replace the first $nadmix columns of the alleles file with the rephased file.
-for chr in `seq 22`; do 
-  cut -c `echo "${nadmix}+1" | bc`- chr${chr}.alleles > chr${chr}.temp1
-  paste -d' ' chr${chr}.allelesRephased0.txt chr${chr}.temp1 | tr -d ' ' > chr${chr}.rephased
-  rm chr${chr}.temp1
-done
