@@ -41,7 +41,7 @@
 
 <p>In the top folder of the ASAFE R package is a file, ASAFE_Visual.pdf, illustrating how ASAFE fits into a genetic analysis workflow: </p>
 
-<p><a href="https://github.com/BiostatQian/ASAFE/raw/master/vignettes/ASAFE_Visual.pdf">Picture of a Workflow using ASAFE</a></p>
+<p><a href="https://github.com/BiostatQian/ASAFE/raw/master/inst/ASAFE_Visual.pdf">Picture of a Workflow using ASAFE</a></p>
 
 <p>Sharon Browning has some code that does the steps in the diagram involving phasing of genotypes and running of RFMIX.
 It is the part of the following script above the line that says "Apply masking": <a href="http://faculty.washington.edu/sguy/local_ancestry_pipeline/rfmix_mds_pipeline">http://faculty.washington.edu/sguy/local_ancestry_pipeline/rfmix_mds_pipeline</a>.
@@ -54,7 +54,7 @@ You'd then write your own script to go from text file output from RFMIX to text 
 <h2>
 <a id="how-to-use-the-asafe-r-package" class="anchor" href="#how-to-use-the-asafe-r-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How do I use the ASAFE R Package?</h2>
 
-<p>In the ASAFE R package folder, see vignettes/ASAFE.pdf for instructions on how to use the package. Cheers!</p>
+<p>In the ASAFE R package folder, see inst/doc/ASAFE.pdf for instructions on how to use the package. Cheers!</p>
 
 <h2>
 <a id="paper-reference" class="anchor" href="#paper-reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paper Reference
@@ -67,21 +67,19 @@ is needed to obtain local ancestry estimates" should be "further methodology is 
 I might poke the production team this week about getting the fully polished version out. [May 11, 2016] </p>
 
 <h2>
-<a id="paper-reference" class="anchor" href="#paper-reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Planned Changes
+<a id="paper-reference" class="anchor" href="#paper-reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changes
 </h2>
 
-[Noted May 24, 2016. Hope to make changes on June 3, 2016.]
-
 <p>
-In response to questions I've received, here are some changes I plan on implementing: 
+[Changes made June 4, 2016]
 </p>
 
 <p>
-(1) Remove function em() from vignette, because a user would likely only be interested in using function algorithm_1snp(), which calls em().
+(1) Removed function em() from vignette, because a user would likely only be interested in using function algorithm_1snp(), which calls em().
 </p>
 
 <p>
-(2) Change comments of functions that use observed data vector n, making it clear where the categories are defined (Supplementary Table 1 Column 4). 
+(2) Change variable names in estep.R, mstep.R, and em.R to match the supplement.
 </p>
 
 <h2>
