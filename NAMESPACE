@@ -1,0 +1,14 @@
+# This tells R to export every single thing in my package.
+# exportPattern("^[[:alpha:]]+")
+
+# Selectively export only certain functions in the R directory.
+# (Let's not export nudge, mstep, increment_n, or estep,
+# because they are helper functions for the other functions.
+# Probably no package user would use them and
+# I'll save time by NOT writing .Rd files for them.)
+
+# importFrom deals with a NOTE from doing R CMD check.
+importFrom("stats", "sd")
+
+export('algorithm_1snp_wrapper', 'algorithm_1snp',
+       'get_mean_sd_error_anc')

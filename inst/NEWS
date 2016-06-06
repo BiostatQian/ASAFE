@@ -1,0 +1,3 @@
+Changes in version 0.0.0:
+
+o This is the initial release of the ASAFE package, which implements an EM algorithm to estimate ancestry specific allele frequencies from genotype and local ancestry data, for a 3-way admixed diploid population where each individual's ancestry pair and genotype are not phased with respect to each other. A description of how to use the ASAFE package is in the vignettes folder.

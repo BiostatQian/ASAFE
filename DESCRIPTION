@@ -1,0 +1,23 @@
+Package: ASAFE
+Type: Package
+Title: Ancestry Specific Allele Frequency Estimation
+Version: 0.99.0
+Date: 2016-04-24
+Author: Qian Zhang <qszhang@uw.edu>
+Maintainer: Qian Zhang <qszhang@uw.edu>
+Description: Given admixed individuals' bi-allelic SNP genotypes and ancestry pairs (where each ancestry can take one of three values) for multiple SNPs, perform an EM algorithm to deal with the fact that SNP genotypes are unphased with respect to ancestry pairs, in order to estimate ancestry-specific allele frequencies for all SNPs.
+License: Artistic-2.0
+biocViews: SNP, GenomeWideAssociation, LinkageDisequilibrium,
+        BiomedicalInformatics, Genetics, ExperimentalDesign
+LazyData: TRUE
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+Collate: estep.R nudge.R mstep.R increment_n.R em.R algorithm_1snp.R
+        algorithm_1snp_wrapper.R get_mean_sd_error_anc_bin.R
+        get_mean_sd_error_anc.R change_ancestry.R
+        draw_allele_given_anc.R get_errors_1_scenario.R
+        get_errors_summary_stats_1_scenario.R get_results_error.R
+        get_scenario_errors.R get_true_freqs_1snp.R sample_ancestry.R
+NeedsCompilation: no
+Packaged: 2016-06-05 23:46:31 UTC; qszhang
+Depends: R (>= 3.2)
