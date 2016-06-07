@@ -2,3 +2,12 @@ Qian Zhang
 5/24/2016
 
 See the webpage http://biostatqian.github.io/ASAFE/ for an introduction to this repos.
+
+I submitted a smaller version of this package to Bioconductor for review. The Bioconductor version does not have a Reproducibility section in the vignette, or Reproducibility-associated functions, data sets, and functions' man pages.
+
+The folder of R code and folder of unit tests in this package on GitHub should be exactly the same as the Bioconductor version's folders, as you can check with this command in a Linux shell:
+
+diff --brief -r dir1/ dir2/
+
+where dir1 and dir2 are folder names, e.g. dir1 could be the Bioconductor version's R folder and dir2 could be this GitHub version's R folder.
+
