@@ -3,7 +3,7 @@ Qian Zhang
 
 See the webpage http://biostatqian.github.io/ASAFE/ for an introduction to this repos.
 
-A smaller version of this package has been *accepted* for inclusion in Bioconductor. I am currently going through final procedures to get it on there, hopefully in the coming days. (Sorry, at International Biometric Conference, I mistakenly said the package was already there.)
+A smaller version of this package is on Bioconductor: https://bioconductor.org/packages/ASAFE/.
 
 The Bioconductor package is smaller than the GitHub package here, because the Bioconductor version does not have a Reproducibility section in the vignette, or Reproducibility-associated functions, data sets, and functions' man pages.
 
