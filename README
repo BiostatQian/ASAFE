@@ -1,9 +1,12 @@
 Qian Zhang
-7/20/2016
+2016/07/20
+Update: 2018/03/27
 
-See the webpage http://biostatqian.github.io/ASAFE/ for an introduction to this repos.
+(1) See the webpage http://biostatqian.github.io/ASAFE/ for an introduction to this repos.
 
-A smaller version of this package is on Bioconductor: https://bioconductor.org/packages/ASAFE/.
+(2) See the vignette inst/doc/ASAFE.pdf for instructions on how to use the package.
+
+(3) A smaller version of this package is on Bioconductor: https://bioconductor.org/packages/ASAFE/.
 
 The Bioconductor package is smaller than the GitHub package here, because the Bioconductor version does not have a Reproducibility section in the vignette, or Reproducibility-associated functions, data sets, and functions' man pages.
 
